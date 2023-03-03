@@ -2,21 +2,19 @@ package com.mole.hencoderdemo.customviews
 
 import android.content.Context
 import android.graphics.Canvas
-import android.graphics.Color
 import android.graphics.Paint
-import android.provider.CalendarContract.Colors
 import android.util.AttributeSet
 import android.view.View
 import com.mole.hencoderdemo.color
-import com.mole.hencoderdemo.px
+import com.mole.hencoderdemo.dp
 import kotlin.math.cos
 import kotlin.math.sin
 
 private val pieAngles = floatArrayOf(60f,90f,150f,60f)
 private val pieColors = listOf("#C21858".color,"#00ACC1".color,"#55882F".color,"#504037".color)
-private val RADIUS = 80f.px
+private val RADIUS = 80f.dp
 private const val DIVIDE_INDEX = 2
-private val DIVIDE = 3f.px
+private val DIVIDE = 3f.dp
 class PieChatView @JvmOverloads constructor(context: Context,attrs: AttributeSet? = null) :
     View(context,attrs) {
 

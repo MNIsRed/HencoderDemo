@@ -5,12 +5,12 @@ import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
 import com.mole.hencoderdemo.R
-import com.mole.hencoderdemo.px
+import com.mole.hencoderdemo.dp
 import com.mole.hencoderdemo.utils.BitmapUtils
 
-private val IMAGE_WIDTH = 100f.px
+private val IMAGE_WIDTH = 100f.dp
 private val XFERMODE = PorterDuffXfermode(PorterDuff.Mode.SRC_IN)
-private val INNER_PADDING = 3f.px
+private val INNER_PADDING = 3f.dp
 class AvatarView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null) : View(context, attrs){
 
     private val bounds = RectF(IMAGE_WIDTH/2 - INNER_PADDING,IMAGE_WIDTH/2 - INNER_PADDING, IMAGE_WIDTH*3/2 + INNER_PADDING , IMAGE_WIDTH*3/2 + INNER_PADDING)
