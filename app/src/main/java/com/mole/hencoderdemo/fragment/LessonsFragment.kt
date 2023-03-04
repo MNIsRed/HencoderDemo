@@ -1,4 +1,4 @@
-package com.mole.hencoderdemo
+package com.mole.hencoderdemo.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,9 @@ import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.mole.hencoderdemo.HenCoderLessonsRecyclerViewAdapter
+import com.mole.hencoderdemo.Lessons
+import com.mole.hencoderdemo.R
 
 /**
  * A fragment representing a list of Items.
@@ -22,10 +25,13 @@ class LessonsFragment : Fragment() {
         // Set the adapter
         if (view is RecyclerView) {
             with(view) {
-                layoutManager = GridLayoutManager(context, Lessons.LESSON_LIST.size)
-                adapter = HenCoderLessonsRecyclerViewAdapter(Lessons.LESSON_LIST)
+                val lessons = Lessons().getLessons(context)
+                layoutManager = GridLayoutManager(context, lessons.size)
+                adapter = HenCoderLessonsRecyclerViewAdapter(lessons)
             }
         }
         return view
     }
+
+
 }

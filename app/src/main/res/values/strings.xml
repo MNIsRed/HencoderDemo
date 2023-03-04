@@ -2,8 +2,11 @@
     <string name="app_name">HencoderDemo</string>
     <string name="title_activity_base">BaseActivity</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="lessons_fragment_label">Lessons</string>
+    <string name="dash_fragment_label">图形位置和尺寸测量</string>
+    <string name="avatar_fragment_label">Xfermode使用</string>
+    <string name="draw_text_fragment_label">文字测量</string>
+
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 

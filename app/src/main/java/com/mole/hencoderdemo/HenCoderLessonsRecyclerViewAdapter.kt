@@ -36,9 +36,6 @@ class HenCoderLessonsRecyclerViewAdapter(
                     )
                 )
             }
-//            holder.idView.context.apply {
-//                Navigation.createNavigateOnClickListener(resources.getIdentifier(item.action,"id",packageName))
-//            }
         }
     }
 

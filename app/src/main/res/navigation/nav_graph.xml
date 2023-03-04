@@ -7,19 +7,50 @@
 
     <fragment
         android:id="@+id/LessonsFragment"
-        android:name="com.mole.hencoderdemo.LessonsFragment"
-        android:label="@string/first_fragment_label"
+        android:name="com.mole.hencoderdemo.fragment.LessonsFragment"
+        android:label="@string/lessons_fragment_label"
         tools:layout="@layout/fragment_lesson">
 
         <action
             android:id="@+id/action_LessonsFragment_to_DrawTextFragment"
             app:destination="@id/DrawTextFragment" />
+
+        <action
+            android:id="@+id/action_LessonsFragment_to_DashFragment"
+            app:destination="@id/DashFragment" />
+
+        <action
+            android:id="@+id/action_LessonsFragment_to_AvatarFragment"
+            app:destination="@id/AvatarFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/DashFragment"
+        android:name="com.mole.hencoderdemo.fragment.DashFragment"
+        android:label="@string/dash_fragment_label"
+        tools:layout="@layout/fragment_dash">
+        <action
+            android:id="@+id/action_DashFragment_to_LessonsFragment"
+            app:destination="@id/LessonsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AvatarFragment"
+        android:name="com.mole.hencoderdemo.fragment.AvatarFragment"
+        android:label="@string/avatar_fragment_label"
+        tools:layout="@layout/fragment_avatar">
+        <action
+            android:id="@+id/action_AvatarFragment_to_LessonsFragment"
+            app:destination="@id/LessonsFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/DrawTextFragment"
-        android:name="com.mole.hencoderdemo.DrawTextFragment"
-        android:label="@string/first_fragment_label"
+        android:name="com.mole.hencoderdemo.fragment.DrawTextFragment"
+        android:label="@string/draw_text_fragment_label"
         tools:layout="@layout/fragment_draw_text">
+        <action
+            android:id="@+id/action_DrawTextFragment_to_LessonsFragment"
+            app:destination="@id/LessonsFragment" />
     </fragment>
 </navigation>
