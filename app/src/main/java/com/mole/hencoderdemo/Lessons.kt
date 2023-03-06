@@ -14,6 +14,7 @@ class Lessons {
                 add(LessonDTO(context.getString(R.string.dash_fragment_label),"action_LessonsFragment_to_DashFragment"))
                 add(LessonDTO(context.getString(R.string.avatar_fragment_label),"action_LessonsFragment_to_AvatarFragment"))
                 add(LessonDTO(context.getString(R.string.draw_text_fragment_label),"action_LessonsFragment_to_DrawTextFragment"))
+                add(LessonDTO(context.getString(R.string.camera_fragment_label),"action_LessonsFragment_to_CameraFragment"))
                 LESSON_LIST = this
             }
         }

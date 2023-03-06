@@ -6,6 +6,7 @@
     <string name="dash_fragment_label">图形位置和尺寸测量</string>
     <string name="avatar_fragment_label">Xfermode使用</string>
     <string name="draw_text_fragment_label">文字测量</string>
+    <string name="camera_fragment_label">范围裁切和几何变换</string>　
 
     <string name="next">Next</string>
     <string name="previous">Previous</string>

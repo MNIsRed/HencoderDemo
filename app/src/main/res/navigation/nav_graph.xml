@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_LessonsFragment_to_AvatarFragment"
             app:destination="@id/AvatarFragment" />
+        <action
+            android:id="@+id/action_LessonsFragment_to_CameraFragment"
+            app:destination="@id/CameraFragment" />
     </fragment>
 
     <fragment
@@ -51,6 +54,17 @@
         tools:layout="@layout/fragment_draw_text">
         <action
             android:id="@+id/action_DrawTextFragment_to_LessonsFragment"
+            app:destination="@id/LessonsFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/CameraFragment"
+        android:name="com.mole.hencoderdemo.fragment.CameraFragment"
+        android:label="@string/draw_text_fragment_label"
+        tools:layout="@layout/fragment_camera">
+        <action
+            android:id="@+id/action_CameraFragment_to_LessonsFragment"
             app:destination="@id/LessonsFragment" />
     </fragment>
 </navigation>
