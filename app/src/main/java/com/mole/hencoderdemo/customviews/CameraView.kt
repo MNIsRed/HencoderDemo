@@ -14,8 +14,11 @@ private val IMAGE_PADDING = 100.dp
 class CameraView @JvmOverloads constructor(context: Context, attrs: AttributeSet?= null):View(context,attrs) {
     private val paint = Paint()
     override fun onDraw(canvas: Canvas) {
+        val leftPadding = (width - IMAGE_WIDTH)/2
         val bitmap = BitmapUtils.getBitmap(resources,R.drawable.avatar_rengwuxian,IMAGE_WIDTH.toInt())
-        canvas.clipRect(IMAGE_PADDING,IMAGE_PADDING, IMAGE_PADDING + IMAGE_WIDTH, IMAGE_PADDING + IMAGE_WIDTH/2)
-        canvas.drawBitmap(bitmap,IMAGE_PADDING,IMAGE_PADDING,paint)
+        canvas.translate(leftPadding, leftPadding)
+        canvas.clipRect(leftPadding,leftPadding, leftPadding + IMAGE_WIDTH, leftPadding + IMAGE_WIDTH/2)
+        canvas.scale(0.5f,0.6f, width.toFloat(), 0f)
+        canvas.drawBitmap(bitmap,0f,0f,paint)
     }
 }
