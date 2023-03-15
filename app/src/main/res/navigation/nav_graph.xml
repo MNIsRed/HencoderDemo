@@ -64,7 +64,7 @@
     <fragment
         android:id="@+id/CameraFragment"
         android:name="com.mole.hencoderdemo.fragment.CameraFragment"
-        android:label="@string/draw_text_fragment_label"
+        android:label="@string/camera_fragment_label"
         tools:layout="@layout/fragment_camera">
         <action
             android:id="@+id/action_CameraFragment_to_LessonsFragment"
@@ -74,7 +74,7 @@
     <fragment
         android:id="@+id/AnimationFragment"
         android:name="com.mole.hencoderdemo.fragment.AnimationFragment"
-        android:label="@string/draw_text_fragment_label"
+        android:label="@string/animation_fragment_label"
         tools:layout="@layout/fragment_animation">
         <action
             android:id="@+id/action_AnimationFragment_to_LessonsFragment"

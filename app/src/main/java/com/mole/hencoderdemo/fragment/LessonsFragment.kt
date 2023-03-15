@@ -26,7 +26,7 @@ class LessonsFragment : Fragment() {
         if (view is RecyclerView) {
             with(view) {
                 val lessons = Lessons().getLessons(context)
-                layoutManager = GridLayoutManager(context, lessons.size)
+                layoutManager = GridLayoutManager(context, 4)
                 adapter = HenCoderLessonsRecyclerViewAdapter(lessons)
             }
         }

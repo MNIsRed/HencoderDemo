@@ -26,9 +26,9 @@ class CameraView @JvmOverloads constructor(context: Context, attrs: AttributeSet
         val leftPadding = (width - IMAGE_WIDTH)/2
         //裁切会改变canvas，需要save配合restore还原canvas
         canvas.save()
-        //第七步，将图片位移回指定地点
+        //第六步，将图片位移回指定地点
         canvas.translate(leftPadding+ IMAGE_WIDTH/2,leftPadding+ IMAGE_WIDTH/2)
-        //第六步，图片旋转回来，使得看上去像是斜着切的
+        //第五步，图片旋转回来，使得看上去像是斜着切的
         canvas.rotate(-30f)
         //第四步，图片旋转后需要裁切范围变大，保留上半部分，所以bottom是0，并且需要注意y轴正方向，所以这里top是-IMAGE_WIDTH
         canvas.clipRect(-IMAGE_WIDTH,-IMAGE_WIDTH, IMAGE_WIDTH, 0f)
