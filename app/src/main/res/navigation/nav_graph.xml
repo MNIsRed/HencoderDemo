@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_LessonsFragment_to_AnimationFragment"
             app:destination="@id/AnimationFragment" />
+        <action
+            android:id="@+id/action_LessonsFragment_to_CustomDrawableFragment"
+            app:destination="@id/CustomDrawableFragment" />
     </fragment>
 
     <fragment
@@ -78,6 +81,16 @@
         tools:layout="@layout/fragment_animation">
         <action
             android:id="@+id/action_AnimationFragment_to_LessonsFragment"
+            app:destination="@id/LessonsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/CustomDrawableFragment"
+        android:name="com.mole.hencoderdemo.fragment.CustomDrawableFragment"
+        android:label="@string/animation_fragment_label"
+        tools:layout="@layout/fragment_custom_drawable">
+        <action
+            android:id="@+id/action_CustomDrawableFragment_to_LessonsFragment"
             app:destination="@id/LessonsFragment" />
     </fragment>
 </navigation>

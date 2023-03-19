@@ -15,6 +15,8 @@ class Lessons {
                 add(LessonDTO(context.getString(R.string.draw_text_fragment_label),"action_LessonsFragment_to_DrawTextFragment"))
                 add(LessonDTO(context.getString(R.string.camera_fragment_label),"action_LessonsFragment_to_CameraFragment"))
                 add(LessonDTO(context.getString(R.string.animation_fragment_label),"action_LessonsFragment_to_AnimationFragment"))
+                add(LessonDTO(context.getString(R.string.custom_drawable_fragment_label),"action_LessonsFragment_to_CustomDrawableFragment"))
+                add(LessonDTO(context.getString(R.string.material_edit_text_fragment_label),"action_LessonsFragment_to_MaterialEditTextFragment"))
                 LESSON_LIST = this
             }
         }

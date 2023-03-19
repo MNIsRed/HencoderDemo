@@ -8,6 +8,8 @@
     <string name="draw_text_fragment_label">文字测量</string>
     <string name="camera_fragment_label">范围裁切和几何变换</string>　
     <string name="animation_fragment_label">属性动画和硬件加速</string>　
+    <string name="custom_drawable_fragment_label">Bitmap和Drawable</string>
+    <string name="material_edit_text_fragment_label">手写MaterialEditText</string>
 
     <string name="next">Next</string>
     <string name="previous">Previous</string>
